@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+
+.carousel-inner {
+    overflow:hidden;
+	margin-right: 190px;
+	margin-left: 190px;
+    width:auto;
+    height:500px;
+    position:relative;
+}
+/*old 767*/ /*991 width 768 OLD MAX*/
+@media (max-width: 700px) {
+	.slider-size carousel-control{
+        height: auto;
+    }
+    .slider-size > img {
+        width: 80%;
+    }
+	.carousel-inner {
+		margin-right:0px;
+		margin-left: 0px;
+	}
+}
+
+@media (max-width: 991px) and (min-width: 701px) { 
+	.slider-size carousel-control{
+        height: auto;
+    }
+    .slider-size > img {
+        width: 80%;
+    }
+	
+		.carousel-inner {
+		margin-right:0px;
+		margin-left: 00px;
+	}
+}
+
+@media (max-width: 1198px) and (min-width: 992px) {
+	.slider-size carousel-control{
+         height: 200px;
+    }
+    .slider-size > img {
+        width: 80%;
+    }
+	.carousel-inner {
+		margin-right:100px;
+		margin-left: 100px;
+	}
+}
+
+@media (max-width: 1240px) and (min-width: 1199px) {
+	.slider-size carousel-control{
+         height: 200px;
+    }
+    .slider-size > img {
+        width: 80%;
+    }
+	.carousel-inner {
+		margin-right:190px;
+		margin-left: 190px;
+	}
+}
