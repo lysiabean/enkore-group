@@ -27,22 +27,34 @@ footer, header, hgroup, menu, nav, section {
 display: block;
 }
 body {
-line-height: 1;
+    line-height: 1;
+    background-image: url('../img/lobby.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
+#logo {
+    width: 50%;
+    height: auto;
+}
+
 ol, ul {
-list-style: none;
+    list-style: none;
 }
 blockquote, q {
-quotes: none;
+    quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-content: '';
-content: none;
+    content: '';
+    content: none;
 }
+
 table {
-border-collapse: collapse;
-border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 /*Reset end*/
 
@@ -56,24 +68,27 @@ h1 {
     text-align: center;
     font-weight: bold;
     color: white;
-    border-width: 7px;
-    border-top-style: dashed;
-    border-bottom-style: dashed;
     display: inline-block;  
 }
 
 h2 {
     font-size: 22px;
     font-weight:bold;
+    color: #FFFFFF;
 }
 
 h3 {
     font-size : 19px;
     font-weight: bold;
+    color: #FFFFFF;
 }
 
 body {
     font-family: 'Oswald', sans-serif;
+}
+
+p {
+    color: #FFFFFF;
 }
 
 header {
@@ -184,7 +199,8 @@ header {
 
 #about {
     height: 850px;
-    background:url(../images/white_texture.png);
+    background-color: white;
+    background-color: rgba(30,10,0, .90);
 }
 
 #about .section-header {
@@ -215,6 +231,7 @@ table {
     width: 85%;
     height: 70px;
     margin-top: 110px;
+    color: #FFFFFF;
 }
 
 #table-topic {
