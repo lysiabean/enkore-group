@@ -3,7 +3,7 @@ CSS Document
 Reset start
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
+a, abbr, acronym, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
@@ -33,6 +33,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Oswald', sans-serif;
 }
 
 #logo {
@@ -42,11 +43,16 @@ body {
 
 ol, ul {
     list-style: none;
+    font-size: 16px;
+    color: #FFFFFF;
 }
 
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
+.table-hover {
+    color: rgb(155,55,159);
+}
+
+.table-striped {
+    color:rgb(155,55,159);
 }
 
 Reset end
@@ -78,10 +84,6 @@ h3 {
     color: #FFFFFF;
 }
 
-body {
-    font-family: 'Oswald', sans-serif;
-}
-
 p {
     color: #FFFFFF;
 	font-size: 16px;
@@ -95,9 +97,8 @@ a {
 	font-size: 16px;
 }
 
-li a {
-	font-size: 22px;
-	font-style:oblique;
+li {
+	font-size: 16px;
 }
 
 header {
@@ -148,7 +149,7 @@ header {
 }
 
 #header-content nav li a:hover {
-    color: #FF8000;
+    color: rgb(155,55,159);
 }
 
 #header-content nav li a:active {
@@ -188,15 +189,13 @@ header {
     height: 500px;
     background-color: white;
     background-color: rgba(57,56,59, .90);
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 60px;    
 }
 
 #rooms {
 	height: 500px;
-    padding-left: 60px;
-    padding-right: 60px;
-	background-color: rgba(117,99,116, .9);
+    padding: 60px;
+	background-color: rgba(155,55,159, .4);
 }
 
 #services {
@@ -205,8 +204,7 @@ header {
 
 #contact {
     height: 500px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 60px;
     background-color: rgba(57,56,59, .90);
 }
 
@@ -214,8 +212,11 @@ header {
     height: 350px;
     width: 100%;
     z-index: 100;
+    padding-top: 60px;
 }
 
-#image-size {
-    height: 30%;
+footer {
+    height: 50px;
+    background-color: rgba(57,56,59, .90);
 }
+
