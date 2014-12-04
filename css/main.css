@@ -94,6 +94,11 @@ body {
 
 p {
     color: #FFFFFF;
+	font-size: 15px;
+}
+
+a {
+	font-size: 12px;
 }
 
 header {
@@ -182,7 +187,22 @@ header {
 }
 
 #about {
-    height: 850px;
+    height: 350px;
     background-color: white;
     background-color: rgba(30,10,0, .90);
+}
+
+#rooms {
+	height: 350px;
+	background-color: rgba(255,59,241,.70);
+}
+
+#services {
+	height: 350px;
+	background-color: rgba(244,0,4,.50);
+}
+#map-canvas {
+    height: 350px;
+    width: 100%;
+    z-index: 100;
 }
