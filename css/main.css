@@ -42,7 +42,6 @@ body {
 }
 
 ol, ul {
-    list-style: none;
     font-size: 16px;
     color: #FFFFFF;
 }
@@ -118,7 +117,7 @@ header {
     float: left;
 }
 
-#icon a:link, #icon a:visited, #icon a:hover, #icon a:active {
+#icon a:link, #icon, #icon a:hover, #icon a:active {
     outline: none;
 }
 
@@ -144,10 +143,6 @@ header {
     color: #FFF;
 }
 
-#header-content nav li a:visited {
-    color: #FFF;
-}
-
 #header-content nav li a:hover {
     color: rgb(155,55,159);
 }
@@ -159,22 +154,6 @@ header {
 #banner {
     width: 100%;
     height: 300px;
-}
-
-#banner h2 {
-    padding: 160px 0 15px 0;
-    font-size: 60px;
-    text-align: center;
-    font-weight: bold;
-    color: black;
-}
-
-#banner h3 {
-    padding: 50px 0 15px 0;
-    font-size: 50px;
-    text-align: center;
-    font-weight: bold;
-    color: black;
 }
 
 #wrapper {

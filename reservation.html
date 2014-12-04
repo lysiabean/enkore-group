@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	    <meta charset="utf-8">
+	    <title>Enkore Karaoke | Seattle</title>
+	    <link rel="stylesheet" href="css/bootstrap.css" />
+	    <link rel="stylesheet" href="css/reservation.css" />
+	</head>
+
+	<body>
+		<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6">
+				<div id="calendar">
+					
+				</div>
+						<script>
+						    $('#calendar').datepicker({
+						        inline: true,
+						        firstDay: 1,
+						        showOtherMonths: true,
+						        dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+						    });
+					</script>
+
+				</div>
+
+			<div class="col-md-6">
+			<h2>Make a Reservation</h2>
+
+			<form>
+			  <fieldset>
+			    <legend>Make a Reservation</legend>
+			    <label>Name</label>
+			    	<input type="text" placeholder="First and Last">
+			    <label>Email</label>
+			    	<input type="text" placeholder="Email">
+			    	<br>
+			    <label>Phone</label>
+			    	<input type="text" placeholder="Phone">
+			    	<br>
+			    <label>Number of Guests</label>
+			    	<select>
+						  <option>1</option>
+						  <option>2</option>
+						  <option>3</option>
+						  <option>4</option>
+						  <option>5</option>
+						  <option>6</option>
+						  <option>7</option>
+						  <option>8</option>
+						  <option>9</option>
+						  <option>10</option>
+						  <option>11</option>
+						  <option>12</option>
+						  <option>13</option>
+						  <option>14</option>
+						  <option>15</option>
+						  <option>16</option>
+						  <option>17</option>
+						  <option>18</option>
+						  <option>19</option>
+						  <option>20</option>
+						  <option>20+</option>
+						</select>
+				<label>Room Size</label>
+			    	<select>
+						  <option>Small</option>
+						  <option>Large</option>
+						  <option>20+ People</option>
+						</select>
+			    <label class="checkbox">
+			      <input type="checkbox"> Send me Enkore news in the future!
+			    </label>
+			    <button type="submit" class="btn">Submit</button>
+			  </fieldset>
+			</form>
+
+			
+					
+					
+						
+
+			</div>
+
+			</div>
+		</div>
+	</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/jquery-ui-datepicker.min.js"></script>
+</html>
