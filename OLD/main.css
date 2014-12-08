@@ -182,7 +182,7 @@ header {
 }
 
 #gallery {
-    height: auto;
+    height: 500px;
     width: auto;
     background-color: rgba(57,56,59, .80);
 }
