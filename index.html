@@ -92,10 +92,69 @@
                                 </tr>
                             </table>
                             <br>
-
+							
+                            <!-- TESTING; COMMENTED OUT
                             <center><p>
                                 <a href="reservation.html"><button class="btn btn-large" type="button">Reserve a Room</button></a>
                             </p></center>
+                            -->
+                            <button type="button" id="reserveButton" class="btn btn-success tm_style_4">Reserve a Room</button>
+                            <div class="modal fade winScreenModal" id="reserveScreen" tabindex="-1" role="dialog" aria-labelledby="winScreen" aria-hidden="true">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <h2 id="reserveForm">Make a Reservation</h2>
+                                        <form>
+                                          <fieldset>
+                                            <legend>Make a Reservation</legend>
+                                            <label>Name</label>
+                                                <input type="text" placeholder="First and Last">
+                                                <br>
+                                            <label>Email</label>
+                                                <input type="text" placeholder="Email">
+                                                <br>
+                                            <label>Phone</label>
+                                                <input type="text" placeholder="Phone">
+                                                <br>
+                                            <label>Number of Guests</label>
+                                                <select>
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                      <option>4</option>
+                                                      <option>5</option>
+                                                      <option>6</option>
+                                                      <option>7</option>
+                                                      <option>8</option>
+                                                      <option>9</option>
+                                                      <option>10</option>
+                                                      <option>11</option>
+                                                      <option>12</option>
+                                                      <option>13</option>
+                                                      <option>14</option>
+                                                      <option>15</option>
+                                                      <option>16</option>
+                                                      <option>17</option>
+                                                      <option>18</option>
+                                                      <option>19</option>
+                                                      <option>20</option>
+                                                      <option>20+</option>
+                                                    </select>
+                                                    <br>
+                                            <label>Room Size</label>
+                                                <select>
+                                                  <option>Small</option>
+                                                  <option>Large</option>
+                                                  <option>20+ People</option>
+                                                </select>
+                                            <label class="checkbox">
+                                              <input type="checkbox"> Send me Enkore news in the future!
+                                            </label>
+                                            <button type="submit" class="btn btn-success">Submit</button>
+                                          </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                     
                     <div class="col-md-6">
@@ -221,6 +280,8 @@
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="app.js"></script>
 <script src="jssor.slider.mini.js"></script>
+<script src="js/bootstrap.js"></script>
+
 <script>
     jQuery(document).ready(function ($) {
         var options = { $AutoPlay: true,

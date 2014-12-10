@@ -36,6 +36,15 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
+label {
+	padding-left: 14px;	
+}
+.checkbox {
+	padding-left: 30px;	
+}
+button {
+	text-align: center;	
+}
 
 
 ol, ul {

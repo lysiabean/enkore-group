@@ -1,4 +1,8 @@
-    
+$( "#reserveButton" ).click(function() {
+	//$( "#instructionToggle" ).slideToggle( "slow" )
+	$('#reserveScreen').modal('show');
+	$('#reserveForm').addClass('zoomIn animated');
+});
                 $(function() {
                     $('a[href*=#]:not([href=#])').click(function() {
                         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') &&          location.hostname == this.hostname) {
