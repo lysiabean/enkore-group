@@ -221,28 +221,58 @@
 	            <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden;">
 	                <!-- Slides Container -->
 	                <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 600px; height: 300px;">
-	                    <div><img u="image" src="./img/room01.jpg" alt="room 1"/>
-	                    </div>
-	                    <div><img u="image" src="./img/room02.jpg" alt="room 2"/>
-	                    </div>
-	                    <div><img u="image" src="./img/room03.jpg" alt="room 3"/>
-	                    </div>
-	                    <div><img u="image" src="./img/room04.jpg" alt="room 4"/>
-	                    </div>
-	                    <div><img u="image" src="./img/room05.jpg" alt="room 5"/>
-	                    </div>
-	                    <div><img u="image" src="./img/room06.jpg" alt="room 6"/>
-	                    </div>
-	                    <div><img u="image" src="./img/room07.jpg" alt="room 7"/>
-	                    </div>
-	                    <div><img u="image" src="./img/room08.jpg" alt="room 8"/>
-	                    </div>
-	                    <div><img u="image" src="./img/room09.jpg" alt="room 9"/>
-	                    </div>
-	                    <div><img u="image" src="./img/room10.jpg" alt="room 10"/>
-	                    </div>
+	                    <div>
+                            <img u="image" src="./img/room01.jpg" alt="room 1"/>
+                            <img u="thumb" src="./img/room01.jpg" alt="room 1"/>
+                        </div>
+                        <div>
+                            <img u="image" src="./img/room02.jpg" alt="room 2"/>
+                            <img u="thumb" src="./img/room02.jpg" alt="room 2"/>
+                        </div>
+                        <div>
+                            <img u="image" src="./img/room03.jpg" alt="room 3"/>
+                            <img u="thumb" src="./img/room03.jpg" alt="room 3"/>
+                        </div>
+                        <div>
+                            <img u="image" src="./img/room04.jpg" alt="room 4"/>
+                            <img u="thumb" src="./img/room04.jpg" alt="room 4"/>
+                        </div>
+                        <div>
+                            <img u="image" src="./img/room05.jpg" alt="room 5"/>
+                            <img u="thumb" src="./img/room05.jpg" alt="room 5"/>
+                        </div>
+                        <div>
+                            <img u="image" src="./img/room06.jpg" alt="room 6"/>
+                            <img u="thumb" src="./img/room06.jpg" alt="room 6"/>
+                        </div>
+                        <div>
+                            <img u="image" src="./img/room07.jpg" alt="room 7"/>
+                            <img u="thumb" src="./img/room07.jpg" alt="room 7"/>
+                        </div>
+                        <div>
+                            <img u="image" src="./img/room08.jpg" alt="room 8"/>
+                            <img u="thumb" src="./img/room08.jpg" alt="room 8"/>
+                        </div>
+                        <div>
+                            <img u="image" src="./img/room09.jpg" alt="room 9"/>
+                            <img u="thumb" src="./img/room09.jpg" alt="room 9"/>
+                        </div>
+                        <div>
+                            <img u="image" src="./img/room10.jpg" alt="room 10"/>
+                            <img u="thumb" src="./img/room10.jpg" alt="room 10"/>
+                        </div>
 	                </div>
-	                
+	                <span u="arrowleft" class="jssora12l" style="width: 30px; height: 46px; top: 123px; left: 0px;"></span>
+                    <span u="arrowright" class="jssora12r" style="width: 30px; height: 46px; top: 123px; right: 0px"></span>
+                    <div u="thumbnavigator" class="jssort01" style="position: absolute; width: 800px; height: 100px; left:0px; bottom: 0px;">
+                        <div u="slides" style="cursor: move;">
+                            <div u="prototype" class="p" style="position: absolute; width: 72px; height: 72px; top: 0; left: 0;">
+                                <div class=w><div u="thumbnailtemplate" style="width: 100%; height: 100%; border: none;position:absolute; top: 0; left: 0;"></div></div>
+                                <div class=c>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 	            </div>
 	        </div>
         </div>
@@ -297,7 +327,20 @@
             $AutoPlay: true,
             $AutoPlayInterval: 5000,
             $ArrowKeyNavigation: true,
-            $PauseOnHover: 3
+            $PauseOnHover: 3,
+            $ArrowNavigatorOptions:{
+                $Class: $JssorArrowNavigator$,
+                $ChanceToShow: 2,
+                $AutoCenter: 0,
+                $Steps: 1
+            },
+            $ThumbnailNavigatorOptions:{
+                $Class: $JssorThumbnailNavigator$,
+                $ChanceToShow: 2,
+                $AutoCenter: 3,
+                $SpacingX: 8,
+                $DisplayPieces: 10
+            }
         };
         var jssor_slider1 = new $JssorSlider$('slider1_container', options);
 
