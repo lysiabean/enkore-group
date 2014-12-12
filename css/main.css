@@ -71,9 +71,9 @@ em {
 }
 
 h1 {
-    padding: 15px 0 15px 0;
-    margin-top: 60px;
-    font-size: 55px;
+    padding: 5px 0 5px 0;
+    margin-top: 10px;
+    font-size: 45px;
     text-align: center;
     font-weight: bold;
     color: white;
@@ -184,14 +184,15 @@ header {
 #about {
     height: 500px;
     background-color: white;
-    background-color: rgba(57,56,59, .90);
+    background-color: rgba(155,55,159, .4);
     padding: 60px;    
 }
 
 #rooms {
 	height: 500px;
     padding: 60px;
-	background-color: rgba(155,55,159, .4);
+    background-color: rgba(57,56,59, .90);
+	
 }
 
 #gallery {
@@ -203,7 +204,7 @@ header {
 #contact {
     height: 500px;
     padding: 60px;
-    background-color: rgba(57,56,59, .90);
+    background-color: rgba(57,56,59, .80);
 }
 
 #map-canvas {
@@ -211,6 +212,7 @@ header {
     width: 100%;
     z-index: 100;
     padding-top: 60px;
+    text-align: center;
 }
 
 footer {
@@ -226,6 +228,10 @@ footer {
 
     #header-content nav{
         display: none;
+    }
+
+    #main_img {
+        text-align: center;
     }
 
     #icon {     
