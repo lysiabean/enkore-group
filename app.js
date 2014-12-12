@@ -83,13 +83,14 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 // Encore Coord:
 // lat: 47.622893
 // lng: -122.155314
-
+//47.6176582
+//-122.1821548
 var mapOptions = {
     center: {
         lat: 47.622893,
         lng: -122.155314
     },
-    zoom: 14 // 0 = earth to 21 = max zoom
+    zoom: 12 // 0 = earth to 21 = max zoom
 }
 
 // add our map to the page in the 'map' div
@@ -103,17 +104,25 @@ var map = new google.maps.Map(mapElem, mapOptions);
 var position = {
     lat: 47.622893,
     lng: -122.155314
+    
 }
-
 //create a marker on the map
 var marker = new google.maps.Marker({
     position: position,
     map: map
 });
 
+var position2 = {
+    lat: 47.6176582
+    lng: -122.1821548
+}
+var marker = new google.maps.Marker({
+    position: position2,
+    map: map
+});
 
-//readd the marker, from memory
-//marker.setMap(map); 
+//read the marker, from memory
+marker.setMap(map); 
 
 var infoWin = new google.maps.InfoWindow();
 
@@ -161,18 +170,3 @@ function onMarkerClick() {
     map.panTo(this.getPosition());
     infoWin.open(map, this);
 }
-
-$.getJSON('http://data.seattle.gov/resource/65fc-btcc.json');
-/*
-    .done(function(data) {
-        //success
-        console.log(data);
-    })
-    .fail(function(data) {
-        //error contains error info     
-    })
-    .always(function() {
-        //called on either success or error cases
-    })
-
-*/
