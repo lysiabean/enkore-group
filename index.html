@@ -11,7 +11,6 @@
 
 
 <body>
-    
         <header>
             <div id="header-content">
                 <div class="row">
@@ -37,6 +36,7 @@
                 </div>
             </div>
         </header>
+
 	<div class="container-fluid">
         <a id="home"></a>
 
@@ -108,18 +108,17 @@
                 <div class="modal fade winScreenModal" id="reserveScreen" tabindex="-1" role="dialog" aria-labelledby="winScreen" aria-hidden="true">
                     <div class="modal-dialog modal-sm">
                         <div class="modal-content">
-                            <h2 id="reserveForm">Make a Reservation</h2>
-                            <form>
+                            <form id="reservation-form">
                                 <fieldset>
                                     <legend>Make a Reservation</legend>
                                     <label>Name</label>
-                                    <input type="text" placeholder="First and Last">
+                                    <input type="text" placeholder="First and Last" name="name" class="form-control" id="name">
                                     <br>
                                     <label>Email</label>
-                                    <input type="text" placeholder="Email">
+                                    <input type="text" placeholder="Email" name="name" class="form-control" id="name">
                                     <br>
                                     <label>Phone</label>
-                                    <input type="text" placeholder="Phone">
+                                    <input type="text" placeholder="Phone" name="name" class="form-control" id="name">
                                     <br>
                                     <label>Location</label>
                                     <select>
@@ -161,13 +160,17 @@
                                     <label class="checkbox">
                                         <input type="checkbox"> Send me Enkore news in the future!
                                     </label>
+                                    <center>
                                     <button type="submit" class="btn btn-success">Submit</button>
+                                    <button type="submit" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                                    </center>
                                 </fieldset>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
+
 
             <div class="col-md-6">
                 <div id="hour-text">

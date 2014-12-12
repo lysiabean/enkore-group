@@ -1,7 +1,8 @@
 $("#reserveButton").click(function() {
     //$( "#instructionToggle" ).slideToggle( "slow" )
-    $('#reserveScreen').modal('show');
-    $('#reserveForm').addClass('zoomIn animated');
+    console.log('showing');
+    $("#reserveScreen").appendTo("body");
+    $("#reserveScreen").addClass("zoomIn animated");
 });
 $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
@@ -169,4 +170,39 @@ function onMarkerClick() {
     //pan the map so that the marker is at the center
     map.panTo(this.getPosition());
     infoWin.open(map, this);
+}
+
+
+
+//VALIDATOR
+document.getElementById("reservation-form").addEventListener("submit", onSubmit);
+
+function onSubmit(evt) {
+    evt.returnValue = validateForm(this);
+    if (evt.returnValue == false && evt.preventDefault) {
+        evt.preventDefault();
+    }
+    return evt.returnValue;
+} //onSubmit()
+
+function validateForm(form) {
+    var requiredFields = ['name', 'email', 'phone'];
+    var formValid = true;
+
+    for(var i = 0; i < requiredFields.length; i++) {
+        formValid &= validateRequiredField(form.elements[requiredFields[i]]);
+    }
+    return formValid;
+} //validateForm()
+
+function validateRequiredField(field) {
+    var value = field.value.trim();
+    var valid = value.length > 0;
+    if(valid) {
+        field.className = "form-control";
+    }
+    else {
+        field.className = "form-control invalid-field";
+    }
+    return valid;
 }
